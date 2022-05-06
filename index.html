@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desing de sites responsivo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">LOGO</a>
+        <ul>
+           <li><a href="#home" onclick="toggle()">Home</a></li>
+           <li><a href="#sobre" >Sobre</a></li>
+           <li><a href="#servico" onclick="toggle()">Serviço</a></li>
+           <li><a href="#portifolio" onclick="toggle()">Portifólio</a></li>
+           <li><a href="#equipe" onclick="toggle()">Equipe</a></li>
+           <li><a href="#contato" onclick="toggle()">Contato</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <main>
+        <section id="home">
+            <div>
+                <h2>Agência de Talentos</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium labore a debitis doloremque obcaecati, alias odio veniam laborum voluptatum unde pariatur praesentium. Perferendis repellendus aut voluptatem quasi repellat ea dolor.</p>
+                <a href="#">Consulte Informações</a>
+            </div>
+            <img src="images/modelo01.jpg" alt="camera com varias fotos">
+        </section>
+        <section id="sobre">
+            <div>
+                <h2>Sobre</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium labore a debitis doloremque obcaecati, alias odio veniam laborum voluptatum unde pariatur praesentium. Perferendis repellendus aut voluptatem quasi repellat ea dolor.</p>
+            </div>
+            <img src="images/foto-final.jpg" alt="camera com varias fotos">
+        </section>
+        <section id="servico">
+            <div>
+                <h2>Seus Serviços</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium labore a debitis doloremque obcaecati, alias odio veniam laborum voluptatum unde pariatur praesentium. Perferendis repellendus aut voluptatem quasi repellat ea dolor.</p>
+            </div>
+            <img src="images/camera.jpg" alt="camera com varias fotos">
+        </section>
+        <section id="portifolio">
+            <div>
+                <h2>Nosso Trabalho Recente</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium labore a debitis doloremque obcaecati, alias odio veniam laborum voluptatum unde pariatur praesentium. Perferendis repellendus aut voluptatem quasi repellat ea dolor.</p>
+            </div>
+            <img src="images/children.jpg" alt="crianças orientais pescando">
+        </section>
+        <section id="equipe">
+            <div>
+                <h2>Nosso Especialista</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium labore a debitis doloremque obcaecati, alias odio veniam laborum voluptatum unde pariatur praesentium. Perferendis repellendus aut voluptatem quasi repellat ea dolor.</p>
+            </div>
+            <img src="images/fotográfo.jpg" alt="">
+        </section>
+        <section id="contato">
+            <div>
+                <h2>Seus Contatos</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laudantium labore a debitis doloremque obcaecati, alias odio veniam laborum voluptatum unde pariatur praesentium. Perferendis repellendus aut voluptatem quasi repellat ea dolor.</p>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript">
+        function toggle(){
+            var header = document.getElementById('header')
+            header .classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
